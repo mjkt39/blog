@@ -1,3 +1,35 @@
-baseURL = 'https://example.org/'
-languageCode = 'en-us'
-title = 'My New Hugo Site'
+baseURL = 'https://blog.swallowarc.jp/'
+languageCode = 'ja'
+defaultContentLanguage = 'ja'
+title = '/dev/log'
+theme = 're-terminal'
+hasCJKLanguage = true
+pagination.pagerSize = 5
+
+[params]
+  contentTypeName = 'posts'
+  themeColor = 'green'
+  showMenuItems = 2
+  fullWidthTheme = false
+  centerTheme = true
+  readingTime = true
+
+[languages.ja.params]
+  title = '/dev/log'
+  subtitle = '技術とガジェットの記録装置'
+  keywords = '技術,ガジェット,プログラミング,IT'
+  copyright = '© 2024 swallowarc'
+  menuMore = 'もっと見る'
+  readMore = '続きを読む'
+  readOtherPosts = '他の記事を読む'
+  
+  [languages.ja.params.logo]
+    logoText = '/dev/log'
+    logoHomeLink = '/'
+
+[languages.ja.menu]
+  [[languages.ja.menu.main]]
+    identifier = 'about'
+    name = 'About'
+    url = '/about'
+    weight = 1

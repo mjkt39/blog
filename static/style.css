@@ -1,0 +1,22 @@
+/* カスタムテーマカラー設定 */
+/* 鮮やかな緑色（Material Design Green A700） */
+:root {
+  --accent: #00c853 !important;
+}
+
+/* リンクのホバー時の色も調整 */
+a:hover {
+  color: #00c853 !important;
+  opacity: 0.8;
+}
+
+/* 選択テキストの背景色 */
+::selection {
+  background: #00c853;
+  color: #000;
+}
+
+::-moz-selection {
+  background: #00c853;
+  color: #000;
+}
