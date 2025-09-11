@@ -54,7 +54,7 @@ jobs:
           hugo \
             --gc \
             --minify \
-            --baseURL "${{ steps.pages.outputs.base_url }}/"
+            --baseURL "https://blog.swallowarc.jp/"
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
