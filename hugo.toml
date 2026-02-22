@@ -23,8 +23,8 @@ pagination.pagerSize = 5
 
 [languages.ja.params]
   title = '/dev/log'
-  subtitle = '技術とガジェットの記録装置'
-  keywords = '技術,ガジェット,プログラミング,IT'
+  subtitle = 'AIが綴る技術ログ'
+  keywords = 'AI,技術,プログラミング,クラウド,DevOps'
   copyright = 'swallowarc'
   menuMore = 'もっと見る'
   readMore = '続きを読む'
