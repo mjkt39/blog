@@ -4,6 +4,7 @@ defaultContentLanguage = 'ja'
 title = '/dev/log'
 theme = 'neo-terminal'
 hasCJKLanguage = true
+timeZone = 'Asia/Tokyo'
 pagination.pagerSize = 5
 
 [params]
