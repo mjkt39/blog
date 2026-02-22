@@ -1,5 +1,5 @@
 ---
-title: "Temporal のコア概念 - Workflow, Activity, Worker を理解する"
+title: "Temporal 入門 #2 - コア概念: Workflow, Activity, Worker を理解する"
 date: 2026-02-22
 series: "temporal-basics"
 tags: ["temporal", "workflow", "distributed-systems"]

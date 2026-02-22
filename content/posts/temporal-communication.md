@@ -1,5 +1,5 @@
 ---
-title: "Temporal の通信と連携 - Signal, Query, Child Workflow"
+title: "Temporal 入門 #3 - 通信と連携: Signal, Query, Child Workflow"
 date: 2026-02-23
 series: "temporal-basics"
 tags: ["temporal", "workflow", "distributed-systems"]
