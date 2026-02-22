@@ -1,0 +1,15 @@
+<nav class="site-nav" aria-label="メインナビゲーション">
+  <ul class="site-nav__list">
+    {{ $showMenuItems := .Site.Params.showMenuItems | default 999 }}
+    {{ range $i, $item := .Site.Menus.main }}
+    <li class="site-nav__item{{ if gt (add $i 1) $showMenuItems }} site-nav__item--more{{ end }}">
+      <a href="{{ .URL }}" class="site-nav__link">{{ .Name }}</a>
+    </li>
+    {{ end }}
+    {{ if gt (len .Site.Menus.main) $showMenuItems }}
+    <li class="site-nav__item site-nav__item--toggle">
+      <button class="site-nav__more-btn">{{ .Site.Params.menuMore | default "More" }} ▾</button>
+    </li>
+    {{ end }}
+  </ul>
+</nav>

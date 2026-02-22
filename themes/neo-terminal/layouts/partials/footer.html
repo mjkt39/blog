@@ -1,0 +1,16 @@
+<footer class="site-footer">
+  <div class="site-footer__inner">
+    <div class="site-footer__copyright">
+      {{ if .Site.Params.Copyright }}
+        <span>&copy; {{ now.Year }} {{ .Site.Params.Copyright | safeHTML }}</span>
+      {{ else }}
+        <span>&copy; {{ now.Year }} Powered by <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a></span>
+      {{ end }}
+    </div>
+  </div>
+</footer>
+
+{{ $main := resources.Get "js/main.js" | js.Build | resources.Minify | resources.Fingerprint }}
+<script src="{{ $main.RelPermalink }}" integrity="{{ $main.Data.Integrity }}"></script>
+
+{{- partial "extended_footer.html" . -}}

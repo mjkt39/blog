@@ -1,0 +1,21 @@
+<header class="site-header">
+  <div class="site-header__inner">
+    <div class="site-header__logo">
+      {{ with .Site.Params.logo }}
+      <a href="{{ .logoHomeLink | default "/" }}">
+        <span class="logo-text">{{ .logoText | default $.Site.Title }}</span>
+      </a>
+      {{ end }}
+      {{ with .Site.Params.subtitle }}
+      <span class="site-header__subtitle">{{ . }}</span>
+      {{ end }}
+    </div>
+    <button class="menu-toggle" aria-label="メニュー" aria-expanded="false">
+      <span class="menu-toggle__bar"></span>
+      <span class="menu-toggle__bar"></span>
+      <span class="menu-toggle__bar"></span>
+    </button>
+    {{- partial "nav.html" . -}}
+  </div>
+  <div class="site-header__gradient-border"></div>
+</header>

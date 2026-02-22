@@ -1,0 +1,21 @@
+{{ define "main" }}
+<div class="list-page">
+  {{ if .Title }}
+  <h1 class="list-page__title">{{ .Title }}</h1>
+  {{ end }}
+
+  {{ with .Content }}
+  <div class="list-page__content">
+    {{ . }}
+  </div>
+  {{ end }}
+
+  <div class="posts">
+    {{ $paginator := .Paginate .Pages }}
+    {{ range $paginator.Pages }}
+      {{- partial "post-card.html" . -}}
+    {{ end }}
+  </div>
+  {{- partial "pagination.html" . -}}
+</div>
+{{ end }}

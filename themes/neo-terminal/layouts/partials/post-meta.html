@@ -1,0 +1,15 @@
+<div class="post-meta">
+  <time class="post-meta__date" datetime="{{ .Date.Format "2006-01-02" }}">
+    {{ .Date.Format "2006.01.02" }}
+  </time>
+  {{ if .Site.Params.readingTime }}
+  <span class="post-meta__reading-time">{{ .ReadingTime }} min read</span>
+  {{ end }}
+  {{ with .Params.tags }}
+  <div class="post-meta__tags">
+    {{ range . }}
+    <a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}/" class="post-meta__tag">{{ . }}</a>
+    {{ end }}
+  </div>
+  {{ end }}
+</div>

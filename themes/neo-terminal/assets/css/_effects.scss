@@ -1,0 +1,53 @@
+@mixin glow-text($color: var(--accent)) {
+  text-shadow: 0 0 8px rgba(0, 200, 83, 0.6), 0 0 16px rgba(0, 200, 83, 0.3);
+}
+
+@mixin glow-box($size: 'md') {
+  @if $size == 'sm' {
+    box-shadow: var(--glow-sm);
+  } @else if $size == 'lg' {
+    box-shadow: var(--glow-lg);
+  } @else {
+    box-shadow: var(--glow-md);
+  }
+}
+
+@mixin gradient-border-bottom {
+  position: relative;
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: var(--gradient-accent);
+  }
+}
+
+@mixin gradient-underline {
+  position: relative;
+  display: inline-block;
+  padding-bottom: 0.3em;
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: var(--gradient-accent);
+  }
+}
+
+@keyframes pulse-glow {
+  0%, 100% { opacity: 0.6; }
+  50% { opacity: 1; }
+}
+
+@keyframes fade-in {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}

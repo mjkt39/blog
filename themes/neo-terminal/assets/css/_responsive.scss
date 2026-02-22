@@ -1,0 +1,107 @@
+@media (max-width: 900px) {
+  .site-content {
+    grid-template-columns: 1fr;
+    padding: 1.5rem 1rem;
+  }
+
+  .sidebar {
+    position: static;
+  }
+
+  .menu-toggle {
+    display: flex;
+  }
+
+  .site-nav {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 260px;
+    height: 100vh;
+    background: var(--bg-secondary);
+    border-left: 1px solid var(--border-color);
+    padding: 5rem 1.5rem 2rem;
+    transition: right 0.3s ease;
+    z-index: 100;
+
+    &.is-open {
+      right: 0;
+    }
+
+    &__list {
+      flex-direction: column;
+      gap: 0;
+    }
+
+    &__link {
+      padding: 0.8em 0;
+      font-size: 1rem;
+      border-bottom: 1px solid var(--border-color);
+    }
+
+    &__item--more {
+      display: block;
+    }
+  }
+
+  .site-header__subtitle {
+    display: none;
+  }
+
+  .post__title {
+    font-size: 1.4rem;
+  }
+
+  .posts-nav__links {
+    flex-direction: column;
+  }
+
+  .posts-nav__link--next {
+    margin-left: 0;
+    text-align: left;
+  }
+}
+
+@media (max-width: 600px) {
+  body {
+    font-size: 14px;
+  }
+
+  .site-header__inner {
+    padding: 0 1rem;
+  }
+
+  .site-header__logo .logo-text {
+    font-size: 1.2rem;
+  }
+
+  .site-content {
+    padding: 1rem 0.8rem;
+  }
+
+  .post-card {
+    padding: 1rem;
+  }
+
+  .post-card__title {
+    font-size: 1.1rem;
+  }
+
+  .post-meta {
+    font-size: 0.75rem;
+  }
+
+  pre {
+    padding: 0.8em;
+    font-size: 0.8rem;
+    border-radius: 4px;
+  }
+
+  table {
+    font-size: 0.8rem;
+  }
+
+  th, td {
+    padding: 0.4em 0.5em;
+  }
+}

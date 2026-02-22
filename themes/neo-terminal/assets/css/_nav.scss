@@ -1,0 +1,73 @@
+.site-nav {
+  &__list {
+    display: flex;
+    gap: 0.5rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  &__item {
+    &--more {
+      display: none;
+    }
+
+    &--more.is-visible {
+      display: block;
+    }
+  }
+
+  &__link {
+    display: block;
+    padding: 0.4em 0.8em;
+    color: var(--text-primary);
+    font-size: 0.9rem;
+    border-radius: 4px;
+    transition: color 0.2s, background-color 0.2s, box-shadow 0.2s;
+
+    &:hover {
+      color: var(--accent);
+      background: rgba(0, 200, 83, 0.08);
+      @include glow-box('sm');
+    }
+  }
+
+  &__more-btn {
+    padding: 0.4em 0.8em;
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    transition: color 0.2s;
+
+    &:hover {
+      color: var(--accent);
+    }
+  }
+}
+
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  padding: 8px;
+  z-index: 101;
+
+  &__bar {
+    display: block;
+    width: 24px;
+    height: 2px;
+    background: var(--text-primary);
+    transition: transform 0.3s, opacity 0.3s;
+  }
+
+  &.is-active {
+    .menu-toggle__bar:nth-child(1) {
+      transform: rotate(45deg) translate(5px, 5px);
+    }
+    .menu-toggle__bar:nth-child(2) {
+      opacity: 0;
+    }
+    .menu-toggle__bar:nth-child(3) {
+      transform: rotate(-45deg) translate(5px, -5px);
+    }
+  }
+}

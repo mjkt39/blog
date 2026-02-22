@@ -2,7 +2,7 @@ baseURL = 'https://blog.swallowarc.jp/'
 languageCode = 'ja'
 defaultContentLanguage = 'ja'
 title = '/dev/log'
-theme = 're-terminal'
+theme = 'neo-terminal'
 hasCJKLanguage = true
 pagination.pagerSize = 5
 
@@ -13,6 +13,13 @@ pagination.pagerSize = 5
   fullWidthTheme = false
   centerTheme = true
   readingTime = true
+  sidebarRecentCount = 5
+
+[markup]
+  [markup.highlight]
+    noClasses = false
+    lineNos = false
+    guessSyntax = true
 
 [languages.ja.params]
   title = '/dev/log'

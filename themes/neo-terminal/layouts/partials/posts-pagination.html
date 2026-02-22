@@ -1,0 +1,17 @@
+{{ with .Site.Params.readOtherPosts }}
+<div class="posts-nav">
+  <h3 class="posts-nav__heading">{{ . }}</h3>
+  <div class="posts-nav__links">
+    {{ if $.PrevInSection }}
+    <a href="{{ $.PrevInSection.Permalink }}" class="posts-nav__link posts-nav__link--prev">
+      ← {{ $.PrevInSection.Title }}
+    </a>
+    {{ end }}
+    {{ if $.NextInSection }}
+    <a href="{{ $.NextInSection.Permalink }}" class="posts-nav__link posts-nav__link--next">
+      {{ $.NextInSection.Title }} →
+    </a>
+    {{ end }}
+  </div>
+</div>
+{{ end }}

@@ -1,0 +1,28 @@
+<aside class="sidebar">
+  {{- $tags := .Site.Taxonomies.tags -}}
+  {{- if $tags -}}
+  <section class="sidebar__section">
+    <h3 class="sidebar__heading">Tags</h3>
+    <div class="tag-cloud">
+      {{- range $tags.Alphabetical -}}
+      <a href="{{ .Page.Permalink }}" class="tag-cloud__tag">
+        {{ .Page.Title }}<span class="tag-cloud__count">{{ .Count }}</span>
+      </a>
+      {{- end -}}
+    </div>
+  </section>
+  {{- end -}}
+
+  <section class="sidebar__section">
+    <h3 class="sidebar__heading">Recent Posts</h3>
+    <ul class="recent-posts">
+      {{- $recentCount := .Site.Params.sidebarRecentCount | default 5 -}}
+      {{- range first $recentCount .Site.RegularPages.ByDate.Reverse -}}
+      <li class="recent-posts__item">
+        <a href="{{ .Permalink }}" class="recent-posts__link">{{ .Title }}</a>
+        <time class="recent-posts__date" datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2006.01.02" }}</time>
+      </li>
+      {{- end -}}
+    </ul>
+  </section>
+</aside>

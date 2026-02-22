@@ -1,0 +1,9 @@
+name = "neo-terminal"
+license = "MIT"
+licenselink = ""
+description = "A neo-futuristic terminal theme for Hugo with gradient and glow effects"
+homepage = ""
+min_version = "0.128.0"
+
+[author]
+  name = "swallowarc"

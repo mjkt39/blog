@@ -1,3 +1,5 @@
+export PATH := $(HOME)/go/bin:$(PATH)
+
 .PHONY: help serve build clean add deploy
 
 # デフォルトタスク

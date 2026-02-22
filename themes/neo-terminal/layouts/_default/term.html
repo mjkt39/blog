@@ -1,0 +1,12 @@
+{{ define "main" }}
+<div class="term-page">
+  <h1 class="term-page__title">
+    <span class="term-page__label">Tag:</span> {{ .Title }}
+  </h1>
+  <div class="posts">
+    {{ range .Pages }}
+      {{- partial "post-card.html" . -}}
+    {{ end }}
+  </div>
+</div>
+{{ end }}
