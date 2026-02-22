@@ -1,6 +1,6 @@
 ---
 title: "Claude Code Skills をチームに配布するベストプラクティス"
-date: 2026-02-21
+date: 2026-02-21T12:00:00+09:00
 tags: ["claude-code", "skills"]
 draft: false
 ---

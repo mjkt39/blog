@@ -1,6 +1,6 @@
 ---
 title: "Temporal 入門 #1 - Why Temporal? 分散システムの課題と Durable Execution"
-date: 2026-02-22
+date: 2026-02-22T10:00:00+09:00
 series: "temporal-basics"
 tags: ["temporal", "workflow", "distributed-systems"]
 draft: false
