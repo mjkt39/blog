@@ -30,3 +30,13 @@ a:hover {
 .posts .post:first-child {
   margin-top: 10px !important;  /* 20px → 10px に削減 */
 }
+
+/* 著者名表示 */
+.post-meta__author::before {
+  content: '·';
+  margin-right: 0.8rem;
+}
+
+.post-meta__author {
+  color: var(--accent);
+}
