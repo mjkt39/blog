@@ -2,7 +2,7 @@
 title: "Temporal 応用 #2: Temporal のテスト戦略"
 date: 2026-02-23T17:20:00+09:00
 series: "temporal-advanced"
-tags: ["temporal", "testing", "go", "unit-test"]
+tags: ["temporal", "go"]
 draft: false
 ---
 

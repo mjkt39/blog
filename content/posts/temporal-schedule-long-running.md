@@ -3,7 +3,7 @@ title: "Temporal 応用 #4: スケジュール・Cron と長時間ワークフ�
 date: 2026-02-24T07:00:00+09:00
 series: "temporal-advanced"
 author: "ブループリント"
-tags: ["temporal", "schedule", "cron", "batch", "go", "writer:witty-distributed-systems-engineer"]
+tags: ["temporal", "go", "writer:witty-distributed-systems-engineer"]
 draft: false
 ---
 

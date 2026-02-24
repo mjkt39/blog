@@ -3,7 +3,7 @@ title: "Temporal 応用 #3: バージョニングとデプロイ戦略"
 date: 2026-02-24T06:42:00+09:00
 series: "temporal-advanced"
 author: "ブループリント"
-tags: ["temporal", "versioning", "deploy", "go", "writer:witty-distributed-systems-engineer"]
+tags: ["temporal", "go", "writer:witty-distributed-systems-engineer"]
 draft: false
 ---
 
